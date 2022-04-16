@@ -15,7 +15,7 @@
     min="1"
     max="10"
   />
-  <p>Character Count: {charLength}</p>
+  <p>Character count: {charLength}</p>
 </div>
 
 <style>

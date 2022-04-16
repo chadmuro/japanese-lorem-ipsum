@@ -1,4 +1,5 @@
 <script>
+  import { slide } from "svelte/transition";
   import { text } from "../text";
   import CopyButton from "./CopyButton.svelte";
   import { copyToClipboard } from "../utils/copyToClipboard";
@@ -25,7 +26,7 @@
   <CopyButton {onClick} {copied} {onMouseLeave} />
   <div>
     {#each Array(count) as _, num}
-      <p>{text[num]}</p>
+      <p transition:slide>{text[num]}</p>
     {/each}
   </div>
 </div>
